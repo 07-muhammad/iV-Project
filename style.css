@@ -1,0 +1,100 @@
+/* Navigation Bar (LOGO)  Styling */
+.navbar-brand {
+  font-weight: 500 !important;
+  color: #009970 !important;
+  font-size: 24px !important;
+  transition: 0.3s color !important;
+}
+
+/* Navbar Styling */
+
+.navbar {
+  background-color: #fff !important;
+  height: 80px !important;
+  margin: 20px !important;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+
+/* Styling Of Login Button */
+.login-button {
+  background-color: #009970;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+.login-button:hover {
+  background-color: #00b383;
+}
+
+/* Removing The Shadow And Borders From Toggle Buttons Of Navigation Bar */
+
+.navbar-toggler {
+  border: none !important;
+  font-size: 1.25rem !important;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Some Changes In Navigation Links Adding New Colors By My Own And Adding Hover Effect */
+
+.nav-link {
+  color: #666777 !important;
+  font-weight: 500 !important;
+  position: relative !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #000 !important;
+}
+
+/* Here I Added An Underline To The Navigation Links When Hovered */
+
+@media (min-width: 992px) {
+  .nav-link::before {
+    content: "" !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 3% !important;
+    transform: translateX(-50) !important;
+    width: 0 !important;
+    height: 2px !important;
+    background-color: #009970 !important;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100% !important;
+    visibility: visible !important;
+  }
+}
+
+/* Hero Section */
+
+.hero-section {
+  background-color: aqua;
+  /* background: url(#) no-repeat center; */
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-section::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
