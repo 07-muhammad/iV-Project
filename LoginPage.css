@@ -243,6 +243,7 @@ body {
 
 @media (max-width: 768px) {
   body {
+    margin-top: 120px;
     padding: 10px;
     height: auto;
   }
