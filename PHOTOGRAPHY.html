@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Miller Photography - Evergreen Events</title>
+    <link rel="stylesheet" href="photography.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2>Evergreen Events</h2>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#venues">Venues</a></li>
+                <li><a href="#photographers" class="active">Photographers</a></li>
+                <li><a href="#caterers">Caterers</a></li>
+                <li><a href="#florists">Florists</a></li>
+                <li><a href="#djs">DJs</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <button class="search-btn">🔍</button>
+            </div>
+            
+            <div class="nav-icons">
+                <button class="icon-btn profile-icon">👤</button>
+                <button class="icon-btn heart-icon">❤️</button>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-content">
+                <div class="profile-avatar">
+                    <div class="avatar-placeholder">SM</div>
+                </div>
+                <div class="profile-info">
+                    <h1>Sarah Miller Photography</h1>
+                    <p class="tagline">Capturing your special moments with a personal touch. Based in San Francisco, CA</p>
+                    
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="about">About</button>
+                        <button class="tab-btn" data-tab="reviews">Reviews</button>
+                        <button class="tab-btn" data-tab="packages">Packages</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab Content -->
+    <div class="tab-content-container">
+        <div class="container">
+            <!-- About Tab -->
+            <div class="tab-content active" id="about">
+                <section class="about-section">
+                    <h3>About Sarah</h3>
+                    <p>With over 8 years of experience in wedding and event photography, Sarah Miller brings passion, creativity, and professionalism to every shoot. Her style combines candid moments with artistic composition, creating timeless memories that couples treasure forever. Sarah believes that every love story is unique and deserves to be told through beautiful, authentic imagery.</p>
+                </section>
+
+                <!-- Gallery Section -->
+                <section class="gallery-section">
+                    <h3>Gallery</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item large">
+                            <div class="image-placeholder">Featured Photo</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image-placeholder">Photo 2</div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="image-placeholder">Photo 3</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Reviews Tab -->
+            <div class="tab-content" id="reviews">
+                <section class="reviews-section">
+                    <h3>Client Reviews</h3>
+                    <div class="reviews-grid">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">JD</div>
+                                <div class="reviewer-info">
+                                    <h4>Jessica Davis</h4>
+                                    <span class="review-date">March 15, 2024</span>
+                                </div>
+                            </div>
+                            <div class="star-rating">
+                                <span>★★★★★</span>
+                            </div>
+                            <p class="review-text">Sarah captured our wedding day perfectly! Her attention to detail and ability to capture candid moments was incredible. We couldn't be happier with our photos.</p>
+                            <button class="like-btn" data-likes="12">
+                                <span class="heart">❤️</span>
+                                <span class="like-count">12</span>
+                            </button>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">MR</div>
+                                <div class="reviewer-info">
+                                    <h4>Michael Rodriguez</h4>
+                                    <span class="review-date">February 8, 2024</span>
+                                </div>
+                            </div>
+                            <div class="star-rating">
+                                <span>★★★★★</span>
+                            </div>
+                            <p class="review-text">Professional, creative, and so easy to work with. Sarah made us feel comfortable throughout the entire process. Highly recommend!</p>
+                            <button class="like-btn" data-likes="8">
+                                <span class="heart">❤️</span>
+                                <span class="like-count">8</span>
+                            </button>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">AS</div>
+                                <div class="reviewer-info">
+                                    <h4>Amanda Smith</h4>
+                                    <span class="review-date">January 22, 2024</span>
+                                </div>
+                            </div>
+                            <div class="star-rating">
+                                <span>★★★★★</span>
+                            </div>
+                            <p class="review-text">The photos exceeded our expectations! Sarah's artistic vision and technical skills are outstanding. Every shot tells a story.</p>
+                            <button class="like-btn" data-likes="15">
+                                <span class="heart">❤️</span>
+                                <span class="like-count">15</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Packages Tab -->
+            <div class="tab-content" id="packages">
+                <section class="packages-section">
+                    <h3>Photography Packages</h3>
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <h4>Basic Package</h4>
+                            <div class="package-price">$2,500</div>
+                            <ul class="package-features">
+                                <li>6 hours of coverage</li>
+                                <li>One photographer</li>
+                                <li>Online gallery</li>
+                                <li>High-resolution images</li>
+                            </ul>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+
+                        <div class="package-card featured">
+                            <div class="popular-badge">Most Popular</div>
+                            <h4>Standard Package</h4>
+                            <div class="package-price">$4,000</div>
+                            <ul class="package-features">
+                                <li>8 hours of coverage</li>
+                                <li>Two photographers</li>
+                                <li>Online gallery</li>
+                                <li>Engagement shoot</li>
+                                <li>High-resolution images</li>
+                            </ul>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+
+                        <div class="package-card">
+                            <h4>Premium Package</h4>
+                            <div class="package-price">$6,000</div>
+                            <ul class="package-features">
+                                <li>10 hours of coverage</li>
+                                <li>Two photographers</li>
+                                <li>Online gallery</li>
+                                <li>Engagement shoot</li>
+                                <li>Photo album</li>
+                                <li>High-resolution images</li>
+                            </ul>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="photography.js"></script>
+</body>
+</html>
